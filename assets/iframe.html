@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!--   See Using Zendesk Garden:
+    https://developer.zendesk.com/apps/docs/developer-guide/setup#using-zendesk-garden
+    https://garden.zendesk.com/css-components/bedrock/
+    https://garden.zendesk.com/css-components/utilities/typography/
+   -->
+  <link href="https://cdn.jsdelivr.net/bootstrap/2.3.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="main.css" rel="stylesheet">
+</head>
+<body>
+  <script src="https://assets.zendesk.com/apps/sdk/2.0/zaf_sdk.js"></script>
+  <script src="https://cdn.jsdelivr.net/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="main.js"></script>
+  <button id="show-requester-info-btn">Requester</button>
+  <button id="show-ticket-info-btn">Ticket</button>
+  <div class="form-group" id="requester-info" style="display:none;">
+    <label for="inputEmail">Email</label>
+    <label id="email-label"></label>
+  </div>
+  <div>
+    <table class="zui-table">
+    <thead>
+        <tr>
+            <th>Subject</th>
+            <th>Ticket Id</th>
+            <th>Requester Name</th>
+        </tr>
+    </thead>
+    <tbody id="ticket-body">
+    </tbody>
+</table>
+  </div>
+  <div>
+    
+  </div>
+  <footer>
+    <a href="https://mysite.github.io/support" target="_blank">Report bugs</a>
+  </footer>
+</body>
+</html>
